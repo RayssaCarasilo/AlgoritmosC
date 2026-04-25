@@ -8,7 +8,7 @@ int opcao = 0;
 int funcaoPrimeiroGrau(float a, float b)
 {
     printf("=== Resolucao passo-a-passo: Equacao do Primeiro Grau ===\n");
-    printf("Fórmula completa: ax + b = 0 => Fórmula simplificada: -b/a \n");
+    printf("Formula completa: ax + b = 0 => Formula simplificada: -b/a \n");
     printf("Digite o valor de a: ");
     scanf("%f", &a);
     printf("Digite o valor de b: ");
@@ -31,7 +31,7 @@ int funcaoPrimeiroGrau(float a, float b)
 int funcaoSegundoGrau(float a, float b, float c)
 {
     printf("=== Resolucao passo-a-passo: Equacao do Segundo Grau ===\n");
-    printf("Fórmula: x² + bx + c \n");
+    printf("Formula: x² + bx + c \n");
     printf("Digite o valor de a: ");
     scanf("%f", &a);
     printf("Digite o valor de b: ");
@@ -50,13 +50,13 @@ int funcaoSegundoGrau(float a, float b, float c)
 
     if (delta < 0)
     {
-        printf("\nDelta é negativo, a equação não possui raízes reais.\n");
+        printf("\nDelta é negativo, a equacao não possui raizes reais.\n");
         return -1; // retorna um valor de erro para indicar que a equação não possui raízes reais
     }
     else if (delta == 0)
     {
         x = -b / (2 * a);
-        printf("\nDelta é zero, a equação possui uma raiz real");
+        printf("\nDelta é zero, a equacao possui uma raiz real");
         printf("\nx = -b / (2a) = -%.2f / (2 * %.2f)", b, a);
         printf("\nResultado: x = %.2f\n", x);
     }
@@ -64,7 +64,7 @@ int funcaoSegundoGrau(float a, float b, float c)
     {
         x1 = (-b + sqrt(delta)) / (2 * a);
         x2 = (-b - sqrt(delta)) / (2 * a);
-        printf("\nDelta é positivo, a equação possui duas raízes reais");
+        printf("\nDelta e positivo, a equação possui duas raizes reais");
         printf("\nx1 = (-b + √Delta) / (2a)");
         printf("\nSubstituindo:\n");
         printf("x1 = (-%.2f + √%.2f) / (2 * %.2f)", b, delta, a);
